@@ -75,7 +75,7 @@ html,body{
 }
 
 .main-body-container > * {
-    flex: 1 1 auto;
+    flex: 1 1 25%;
 }
 
 .main-body-container .partition-1 {
@@ -96,7 +96,7 @@ html,body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 50px 0 50px;
+    margin: 0 50px 40px 50px;
 }
 .partition-1 .container > *{
     flex: 0 1 50%;
@@ -111,17 +111,18 @@ html,body{
     width: 400px;
 
 }
-.left p, .left button {
+.left p{
     color: #F9FAF8;
 }
 .left p:nth-child(1){
-    font-size: 48px;
+    font-size: 44px;
     font-weight: bolder;
     margin-bottom: 0px;
     
 }
 button{
     background-color: #3882f6;
+    color: #F9FAF8;
     border-radius: 6px;
     width: 90px;
     height: 30px;
@@ -179,7 +180,8 @@ button:hover {background: #3065bb;}
     
 } */
 
-.sign-up > button::after{
+/* .sign-up > button::after{ */
+button::after{    
     content: "";
     background: #f1f1f1;
     display: block;
@@ -194,7 +196,8 @@ button:hover {background: #3065bb;}
     
 }
 
-.sign-up  > button:active::after{
+/* .sign-up  > button:active::after{ */
+button:active::after{
     width: 0%;
     height: 0%;
     opacity: 1;
@@ -228,7 +231,7 @@ button:hover {background: #3065bb;}
 .p2-box{
     width: 8rem;
     height: 8rem;
-    border: 3px solid red; 
+    border: 3px solid #3882f6; 
     border-radius: 10px;
     margin: auto;
 }
@@ -259,4 +262,22 @@ button:hover {background: #3065bb;}
 .quote-by{
     text-align: end;
     font-weight: bold;
+}
+
+/* Partition 4 */
+.partition-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partition-4 > .box{
+    background-color: #3882f6;
+    border-radius: 6px;
+    width: 80%;
+    min-height: 50%;
+}
+.partition-4 .container{
+    margin-right: 6%;
+    margin-left: 6%;
+    display: flex;
 }
