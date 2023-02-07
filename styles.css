@@ -1,0 +1,262 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: roboto;
+}
+
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.main > .container{
+    display: flex;
+    flex-flow: column;
+    height:100%;
+    width: 100%;
+}
+
+
+
+.header{
+    background-color: #1F2937;
+    width:100%;
+    flex: 0 1 50px;
+    color: #F9FAF8;
+    
+    
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100%;
+}
+.header-container p{
+    flex: 1 1 0px;
+    font-size: 24px;
+    margin: 0 0 0 0;
+
+}
+.header-links{
+    font-size: 18px;
+    flex: 1 1 0px;
+    justify-content: flex-end;
+    display: flex;
+    gap: 15px;
+
+}
+.header-links > a{
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+
+.footer{
+    background-color: #1F2937;
+    width:100%;
+    flex: 0 1 50px;
+    color: #F9FAF8;
+}
+.main-body{
+    width:100%;
+    flex: 1 1 auto;
+}
+
+.main-body-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.main-body-container > * {
+    flex: 1 1 auto;
+}
+
+.main-body-container .partition-1 {
+    background-color: #1F2937;
+}
+
+.main-body-container .partition-3 {
+    background-color: #E5E7EB;
+}
+
+
+/*PARTITION 1*/
+
+.partition-1{
+    width:100%;
+}
+.partition-1 .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+.partition-1 .container > *{
+    flex: 0 1 50%;
+}
+.partition-1 .container .right{
+   display: flex;
+   justify-content: center;
+
+}
+.right img{
+    height: 200px;
+    width: 400px;
+
+}
+.left p, .left button {
+    color: #F9FAF8;
+}
+.left p:nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    
+}
+button{
+    background-color: #3882f6;
+    border-radius: 6px;
+    width: 90px;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    position: relative;
+
+}
+
+button:hover {background: #3065bb;}
+
+/* .sign-up > button::after{
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+    position: absolute;
+}
+
+.sign-up  > button:active::after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+} */
+
+/*I personally like this flashing animation*/
+/* .sign-up > button::after{
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    transition: all 0.8s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-up  > button:active::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0s;
+    
+} */
+
+.sign-up > button::after{
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    top: -50%;
+    left: -50%;
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: 6px;
+    
+}
+
+.sign-up  > button:active::after{
+    width: 0%;
+    height: 0%;
+    opacity: 1;
+    transition: 0s;
+    top: 50%;
+    left: 50%;
+    border-radius: 6px;
+    
+}
+
+/* PARTITION 2 */
+
+.partition-2 .container{
+    height: 100%;
+    margin: 0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p2-box-cell{
+    text-align: center;
+    width: 9rem;
+}
+
+.p2-box-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.p2-box{
+    width: 8rem;
+    height: 8rem;
+    border: 3px solid red; 
+    border-radius: 10px;
+    margin: auto;
+}
+.b2-box-info{
+    margin:auto;
+}
+.b2-box-info > p {
+    font-size: 12px;
+    margin-top: 5px;
+
+}
+
+/* PARTITION 3 */
+.partition-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-container{
+    width: 55%;
+}
+.quote-body{
+    font-size: 26px;
+    font-style: italic;
+    color: #1F2937;
+}
+.quote-by{
+    text-align: end;
+    font-weight: bold;
+}
